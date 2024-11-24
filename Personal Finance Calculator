@@ -1,0 +1,25 @@
+import os
+
+def display_menu():
+    print("\n=== Personal Finance Calculator ===")
+    print("1. Add Income")
+    print("2. Add Expense")
+    print("3. View Report")
+    print("4. Save Report")
+    print("5. Exit")
+
+def add_income(incomes):
+    amount = float(input("Enter income amount: "))
+    source = input("Enter income source: ")
+    incomes.append({"amount": amount, "source": source})
+    print("Income added successfully!")
+
+def add_expense(expenses):
+    amount = float(input("Enter expense amount: "))
+    category = input("Enter expense category (e.g., Food, Transport): ")
+    expenses.append({"amount": amount, "category": category})
+    print("Expense added successfully!")
+
+def display_report(incomes, expenses):
+    print("\n=== Financial Report ===")
+…
